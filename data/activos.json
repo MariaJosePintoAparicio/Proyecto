@@ -1,0 +1,116 @@
+{
+    "assets":[
+        {
+        "Id": "X5X",
+        "codTransaccion": "SSXX",
+        "nroFormulario": "12332",
+        "IdMarca": "SLXIV",
+        "IdCategoria": "XXX",
+        "IdTipo": "SSXX",
+        "valorUnitario": "12332",
+        "IdProvedor": "SLXIV",
+        "nroSerial": "ASDX",
+        "IdEmpresaResponsable": "SSLXX",
+        "IdEstado": "312320"
+        }
+    ],
+
+    "asignation":[
+        {
+            "Id": "",
+            "fecha": "",
+            "IdResponsable": ""
+        }
+    ],
+
+    "activeCategory":[
+        {
+            "Id": "",
+            "nombre": ""
+        }
+    ],
+
+    "detailMovement":[
+        {
+            "id": "1240588608",
+            "fecha": "",
+            "idActivo": "",
+            "comentario": "",
+            "idAsignacion": ""
+        }
+    ],
+
+    "state":[
+        {
+            "id": "",
+            "nombre": ""
+        }
+    ],
+
+    "historyActive":[
+        {
+            "id": "",
+            "nombre": "",
+            "email": "",
+            "fecha": "",
+            "idResponsable": "",
+            "idEstado": ""
+        }
+    ],
+
+    "marks":[
+        {
+            "id": "",
+            "nombre": ""
+        }
+    ],
+
+    "people":[
+        {
+            "id": "1240588608",
+            "nombre": "",
+            "email": "",
+            "idTipoPersona": ""
+        }
+    ],
+
+    "supplier":[
+        {
+            "id": "",
+            "nombre": "",
+            "email": ""
+        }
+    ],
+
+    "telephonePerson":[
+        {
+            "id": "",
+            "nro": "",
+            "ubicacion": "",
+            "idPersona": ""
+        }
+    ],
+
+    "activeType":[
+        {
+            "id": "",
+            "nombre": "",
+            "email": ""
+        }
+    ],
+
+    "typeActiveMove":[
+        {
+            "id": "",
+            "nombre": ""
+        }
+    ],
+
+    "typePerson":[
+        {
+            "id": "",
+            "nombre": ""
+        }
+    ]
+
+}
