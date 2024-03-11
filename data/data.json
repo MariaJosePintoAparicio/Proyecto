@@ -1,0 +1,29 @@
+{
+  "tipoActivo": [
+    {
+      "codigo": "1234",
+      "nombre": "Tipo Activo Prueba 1",
+      "email": "garciamendozamarlonfabian@gmail.com",
+      "id": "a19c"
+    },
+    {
+      "id": "6b32",
+      "codigo": "000",
+      "nombre": "Tipo Activo Prueba 2",
+      "email": "garciamendozamarlonfabian@gmail.com"
+    }
+  ],
+  "tipoPersona": [
+    {
+      "id": "1376",
+      "codigo": "002",
+      "nombre": "Juridica"
+    },
+    {
+      "codigo": "001",
+      "nombre": "Natural",
+      "id": "5658"
+    }
+  ],
+  "personas": []
+}

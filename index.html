@@ -23,8 +23,7 @@
                 </div>
 
                 <ul class="sidebar-nav">
-                
-                    <li class="sidebar-item">
+                    <!-- <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#activos" data-bs-toggle="collapse"
                             aria-expanded="false"><i class="fa-solid fa-tasks pe-2"></i>
                             Activos
@@ -65,52 +64,11 @@
                         </ul>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#personas" data-bs-toggle="collapse"
-                            aria-expanded="false"><i class="fa-solid fa-users pe-2"></i>
-                            Personas
-                        </a>
-                        <ul id="personas" class="sidebar-dropdown list-unstyled collapse ps-3" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-search pe-2"></i>Buscar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-plus pe-2"></i>Agregar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-edit pe-2"></i>Editar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-trash-alt pe-2"></i>Eliminar</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#estados" data-bs-toggle="collapse"
                             aria-expanded="false"><i class="fa-solid fa-flag pe-2"></i>
                             Estados
                         </a>
                         <ul id="estados" class="sidebar-dropdown list-unstyled collapse ps-3" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-search pe-2"></i>Buscar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-plus pe-2"></i>Agregar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-edit pe-2"></i>Editar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-trash-alt pe-2"></i>Eliminar</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#tiposPersonas"
-                            data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-id-card pe-2"></i>
-                            Tipo Personas
-                        </a>
-                        <ul id="tiposPersonas" class="sidebar-dropdown list-unstyled collapse ps-3"
-                            data-bs-parent="#sidebar">
                             <li class="sidebar-item">
                                 <a href="#" class="sidebar-link"><i class="fas fa-search pe-2"></i>Buscar</a>
                             </li>
@@ -146,24 +104,86 @@
                                 <a href="#" class="sidebar-link"><i class="fas fa-trash-alt pe-2"></i>Eliminar</a>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#tipoActivo"
                             data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-cogs pe-2"></i>
                             Tipo Activo
                         </a>
-                        <ul id="tipoActivo" class="sidebar-dropdown list-unstyled collapse ps-3" data-bs-parent="#sidebar">
+                        <ul id="tipoActivo" class="sidebar-dropdown list-unstyled collapse ps-3"
+                            data-bs-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-search pe-2"></i>Buscar</a>
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#BuscadorTipoActivo"><i class="fas fa-search pe-2"></i>Buscar</a>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-plus pe-2"></i>Agregar</a>
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#formularioTipoActivo"><i class="fas fa-plus pe-2"></i>Agregar</a>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-edit pe-2"></i>Editar</a>
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#EditarTipoActivo"><i class="fas fa-edit pe-2"></i>Editar</a>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-trash-alt pe-2"></i>Eliminar</a>
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEliminarTipoActivo"><i
+                                        class="fas fa-trash-alt pe-2"></i>Eliminar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#tiposPersonas"
+                            data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-id-card pe-2"></i>
+                            Tipo Personas
+                        </a>
+                        <ul id="tiposPersonas" class="sidebar-dropdown list-unstyled collapse ps-3"
+                            data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalBuscarTipoPersona"><i
+                                        class="fas fa-search pe-2"></i>Buscar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalAgregarTipoPersona"><i
+                                        class="fas fa-plus pe-2"></i>Agregar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEditarTipoPersona"><i class="fas fa-edit pe-2"></i>Editar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEliminarTipoPersona"><i
+                                        class="fas fa-trash-alt pe-2"></i>Eliminar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#personas" data-bs-toggle="collapse"
+                            aria-expanded="false"><i class="fa-solid fa-users pe-2"></i>
+                            Personas
+                        </a>
+                        <ul id="personas" class="sidebar-dropdown list-unstyled collapse ps-3"
+                            data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalBuscarPersona"><i
+                                        class="fas fa-search pe-2"></i>Buscar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalAgregarPersona"><i
+                                        class="fas fa-plus pe-2"></i>Agregar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEditarPersona"><i class="fas fa-edit pe-2"></i>Editar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEliminarPersona"><i
+                                        class="fas fa-trash-alt pe-2"></i>Eliminar</a>
                             </li>
                         </ul>
                     </li>
@@ -176,11 +196,406 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </nav>
-       
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/services/tipoActivos.js"></script>
+    <script src="js/services/tipoPersona.js"></script>
+    <script src="js/services/personas.js"></script>
+
+
+
+
+
+
+
+
+
+    <!-- Modales de  Persona -->
+    <!-- Modal Buscador  Persona -->
+    <div class="modal fade" id="ModalBuscarPersona" tabindex="-1" aria-labelledby="ModalBuscarPersona"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar  de Persona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarPersona" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscarPersona()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultadoBuscarPersona" class="py-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Agregar  Persona -->
+    <div class="modal fade" id="ModalAgregarPersona" tabindex="-1" aria-labelledby="ModalAgregarPersona"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar de Persona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="PersonaForm">
+                        <div class="mb-3">
+                            <label for="codigoPersona" class="form-label">ID :</label>
+                            <input type="text" class="form-control" id="codigoPersona" name="codigoPersona" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombrePersona" class="form-label">Nombre :</label>
+                            <input type="text" class="form-control" id="nombrePersona" name="nombrePersona" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email :</label>
+                            <input type="email" class="form-control" id="emailPersona" name="email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Tipo Persona :</label>
+                            <select class="form-select mb-3" id="tipoPersonaPersona">
+                                <option value="" selected>Loading...</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar  Persona -->
+    <div class="modal fade" id="ModalEditarPersona" tabindex="-1" aria-labelledby="ModalEditarPersona"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Persona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarEditarPersona" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="editarPersona()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div>
+                        <h6 class="mt-4 mb-2">Editar de Persona</h6>
+                        <form>
+                            <input type="text" class="form-control d-none" id="idEditarPersona" name="id" required>
+
+                            <div class="mb-3">
+                                <label for="codigo" class="form-label">ID :</label>
+                                <input type="text" class="form-control" id="codigoEditarPersona" name="codigo"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre :</label>
+                                <input type="text" class="form-control" id="nombreEditarPersona" name="nombre"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email :</label>
+                                <input type="email" class="form-control" id="emailEditarPersona" name="email"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Tipo Persona :</label>
+                                <select class="form-select mb-3" id="tipoPersonaEditarPersona">
+                                    <option value="" selected>Loading...</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto d-flex"
+                                onclick="guardarEdicionPersona()">Editar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Eliminar  Persona -->
+    <div class="modal fade" id="ModalEliminarPersona" tabindex="-1" aria-labelledby="ModalEliminarPersona"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Persona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscadorEliminarPersona" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscadorEliminarPersona()">Buscar</button>
+
+                    <input type="text" class="form-control d-none" id="eliminarIdPersona" name="id" required>
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultado-busqueda-eliminar" class="py-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modales de Tipo Persona -->
+    <!-- Modal Buscador Tipo Persona -->
+    <div class="modal fade" id="ModalBuscarTipoPersona" tabindex="-1" aria-labelledby="ModalBuscarTipoPersona"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar Tipo de Persona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarTipoPersona" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscarTipoPersona()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultadoBuscarTipoPersona" class="py-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Agregar Tipo Persona -->
+    <div class="modal fade" id="ModalAgregarTipoPersona" tabindex="-1" aria-labelledby="ModalAgregarTipoPersona"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar Tipo de Persona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="tipoPersonaForm">
+                        <div class="mb-3">
+                            <label for="codigoPersona" class="form-label">ID :</label>
+                            <input type="text" class="form-control" id="codigoPersona" name="codigoPersona" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombrePersona" class="form-label">Nombre :</label>
+                            <input type="text" class="form-control" id="nombrePersona" name="nombrePersona" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar Tipo Persona -->
+    <div class="modal fade" id="ModalEditarTipoPersona" tabindex="-1" aria-labelledby="ModalEditarTipoPersona"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar Tipo de Persona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarEditarTipoPersona" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="editarTipoPersona()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div>
+                        <h6 class="mt-4 mb-2">Editar Tipo de Persona</h6>
+                        <form>
+                            <input type="text" class="form-control d-none" id="idEditarTipoPersona" name="id" required>
+
+                            <div class="mb-3">
+                                <label for="codigo" class="form-label">ID :</label>
+                                <input type="text" class="form-control" id="codigoEditarTipoPersona" name="codigo"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre :</label>
+                                <input type="text" class="form-control" id="nombreEditarTipoPersona" name="nombre"
+                                    required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto d-flex"
+                                onclick="guardarEdicionTipoPersona()">Editar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Eliminar Tipo Persona -->
+    <div class="modal fade" id="ModalEliminarTipoPersona" tabindex="-1" aria-labelledby="ModalEliminarTipoPersona"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar Tipo de Persona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscadorEliminarTipoPersona" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscadorEliminarTipoPersona()">Buscar</button>
+
+                    <input type="text" class="form-control d-none" id="eliminarIdTipoPersona" name="id" required>
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultado-busqueda-eliminar" class="py-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modales de Tipo Activo -->
+    <!-- Modal Agregar Tipo Activo -->
+    <div class="modal fade" id="formularioTipoActivo" tabindex="-1" aria-labelledby="formularioTipoActivoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formularioTipoActivoLabel">Agregar Tipo de Activo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="tipoActivoForm">
+                        <div class="mb-3">
+                            <label for="codigo" class="form-label">ID :</label>
+                            <input type="text" class="form-control" id="codigo" name="codigo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre :</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email :</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar Tipo Activo -->
+    <div class="modal fade" id="EditarTipoActivo" tabindex="-1" aria-labelledby="EditarTipoActivoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="EditarTipoActivoLabel">Buscar Tipo de Activo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarEditarTipoActivo" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="editarTipoActivo()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div>
+                        <h6 class="mt-4 mb-2">Editar Tipo de Activo</h6>
+                        <form>
+                            <input type="text" class="form-control d-none" id="idEditarTipoActivo" name="id" required>
+
+                            <div class="mb-3">
+                                <label for="codigo" class="form-label">ID :</label>
+                                <input type="text" class="form-control" id="codigoEditarTipoActivo" name="codigo"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre :</label>
+                                <input type="text" class="form-control" id="nombreEditarTipoActivo" name="nombre"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email :</label>
+                                <input type="email" class="form-control" id="emailEditarTipoActivo" name="email"
+                                    required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto d-flex"
+                                onclick="guardarEdicionTipoActivo()">Editar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Buscador Tipo Activo -->
+    <div class="modal fade" id="BuscadorTipoActivo" tabindex="-1" aria-labelledby="BuscadorTipoActivo"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="BuscadorTipoActivo">Buscar Tipo de Activo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarTipoActivo" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscarTipoActivo()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultado-busqueda" class="py-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Eliminar Tipo Activo -->
+    <div class="modal fade" id="ModalEliminarTipoActivo" tabindex="-1" aria-labelledby="ModalEliminarTipoActivo"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar Tipo de Activo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscadorEliminarTipoActivo" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscadorEliminarTipoActivo()">Buscar</button>
+
+                    <input type="text" class="form-control d-none" id="eliminarIdTipoActivo" name="id" required>
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultado-busqueda-eliminar" class="py-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
