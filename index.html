@@ -23,88 +23,95 @@
                 </div>
 
                 <ul class="sidebar-nav">
-                    <!-- <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#activos" data-bs-toggle="collapse"
-                            aria-expanded="false"><i class="fa-solid fa-tasks pe-2"></i>
-                            Activos
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-list pe-2"></i>
+                            Dashboard
                         </a>
-                        <ul id="activos" class="sidebar-dropdown list-unstyled collapse ps-3" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-search pe-2"></i>Buscar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-plus pe-2"></i>Agregar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-edit pe-2"></i>Editar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-trash-alt pe-2"></i>Eliminar</a>
-                            </li>
-                        </ul>
+                    </li>
+                    <li class="sidebar-header">
+                        Listado de Activos
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#marcas" data-bs-toggle="collapse"
-                            aria-expanded="false"><i class="fa-solid fa-trademark pe-2"></i>
-                            Marcas
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#asignar"
+                            data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-handshake pe-2"></i>
+                            Asignar
                         </a>
-                        <ul id="marcas" class="sidebar-dropdown list-unstyled collapse ps-3" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-search pe-2"></i>Buscar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-plus pe-2"></i>Agregar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-edit pe-2"></i>Editar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-trash-alt pe-2"></i>Eliminar</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#estados" data-bs-toggle="collapse"
-                            aria-expanded="false"><i class="fa-solid fa-flag pe-2"></i>
-                            Estados
-                        </a>
-                        <ul id="estados" class="sidebar-dropdown list-unstyled collapse ps-3" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-search pe-2"></i>Buscar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-plus pe-2"></i>Agregar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-edit pe-2"></i>Editar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-trash-alt pe-2"></i>Eliminar</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#tipoMovimiento"
-                            data-bs-toggle="collapse" aria-expanded="false"><i
-                                class="fa-solid fa-exchange-alt pe-2"></i>
-                            Tipo Movimiento Activo
-                        </a>
-                        <ul id="tipoMovimiento" class="sidebar-dropdown list-unstyled collapse ps-3"
+                        <ul id="asignar" class="sidebar-dropdown list-unstyled collapse ps-3"
                             data-bs-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-search pe-2"></i>Buscar</a>
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalCrearAsignacion"><i class="fas fa-plus pe-2"></i>Crear Asignación</a>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-plus pe-2"></i>Agregar</a>
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalAsignarActivo"><i class="fas fa-tasks pe-2"></i>Asignar Activos</a>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-edit pe-2"></i>Editar</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link"><i class="fas fa-trash-alt pe-2"></i>Eliminar</a>
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalRetornarActivo"><i class="fas fa-arrow-left pe-2"></i>Retornar Activo</a>
                             </li>
                         </ul>
-                    </li> -->
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#activos"
+                            data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-cogs pe-2"></i>
+                            Activos
+                        </a>
+                        <ul id="activos" class="sidebar-dropdown list-unstyled collapse ps-3"
+                            data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalBuscarActivos"><i class="fas fa-search pe-2"></i>Buscar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalAgregarActivos"><i class="fas fa-plus pe-2"></i>Agregar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEditarActivos"><i class="fas fa-edit pe-2"></i>Editar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEliminarActivo"><i
+                                        class="fas fa-trash-alt pe-2"></i>Eliminar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#historialActivo"
+                            data-bs-toggle="collapse" aria-expanded="false"><i
+                                class="fa-solid fa-history   pe-2"></i>
+                            Historial Activo
+                        </a>
+                        <ul id="historialActivo" class="sidebar-dropdown list-unstyled collapse ps-3"
+                            data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalBuscarHistorialActivo"><i
+                                        class="fas fa-search pe-2"></i>Buscar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalAgregarHistorialActivo"><i
+                                        class="fas fa-plus pe-2"></i>Agregar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEditarHistorialActivo"><i
+                                        class="fas fa-edit pe-2"></i>Editar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEliminarHistorialActivo"><i
+                                        class="fas fa-trash-alt pe-2"></i>Eliminar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-header">
+                        Listado de configuracion
+                    </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#tipoActivo"
                             data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-cogs pe-2"></i>
@@ -168,13 +175,11 @@
                             data-bs-parent="#sidebar">
                             <li class="sidebar-item">
                                 <a href="#" class="sidebar-link" data-bs-toggle="modal"
-                                    data-bs-target="#ModalBuscarPersona"><i
-                                        class="fas fa-search pe-2"></i>Buscar</a>
+                                    data-bs-target="#ModalBuscarPersona"><i class="fas fa-search pe-2"></i>Buscar</a>
                             </li>
                             <li class="sidebar-item">
                                 <a href="#" class="sidebar-link" data-bs-toggle="modal"
-                                    data-bs-target="#ModalAgregarPersona"><i
-                                        class="fas fa-plus pe-2"></i>Agregar</a>
+                                    data-bs-target="#ModalAgregarPersona"><i class="fas fa-plus pe-2"></i>Agregar</a>
                             </li>
                             <li class="sidebar-item">
                                 <a href="#" class="sidebar-link" data-bs-toggle="modal"
@@ -183,6 +188,170 @@
                             <li class="sidebar-item">
                                 <a href="#" class="sidebar-link" data-bs-toggle="modal"
                                     data-bs-target="#ModalEliminarPersona"><i
+                                        class="fas fa-trash-alt pe-2"></i>Eliminar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#TelefonoPersona"
+                            data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-phone pe-2"></i>
+                            Telefono Persona
+                        </a>
+                        <ul id="TelefonoPersona" class="sidebar-dropdown list-unstyled collapse ps-3"
+                            data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalBuscarTelefonoPersona"><i
+                                        class="fas fa-search pe-2"></i>Buscar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalAgregarTelefonoPersona"><i
+                                        class="fas fa-plus pe-2"></i>Agregar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEditarTelefonoPersona"><i
+                                        class="fas fa-edit pe-2"></i>Editar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEliminarTelefonoPersona"><i
+                                        class="fas fa-trash-alt pe-2"></i>Eliminar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#categoriaActivos"
+                            data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-tasks pe-2"></i>
+                            Categoria Activo
+                        </a>
+                        <ul id="categoriaActivos" class="sidebar-dropdown list-unstyled collapse ps-3"
+                            data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalBuscarCategoriaActivos"><i
+                                        class="fas fa-search pe-2"></i>Buscar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalAgregarCategoriaActivos"><i
+                                        class="fas fa-plus pe-2"></i>Agregar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEditarCategoriaActivos"><i
+                                        class="fas fa-edit pe-2"></i>Editar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEliminarCategoriaActivos"><i
+                                        class="fas fa-trash-alt pe-2"></i>Eliminar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#proveedor" data-bs-toggle="collapse"
+                            aria-expanded="false"><i class="fa-solid fa-users pe-2"></i>
+                            Proveedor
+                        </a>
+                        <ul id="proveedor" class="sidebar-dropdown list-unstyled collapse ps-3"
+                            data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalBuscarProveedor"><i class="fas fa-search pe-2"></i>Buscar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalAgregarProveedor"><i class="fas fa-plus pe-2"></i>Agregar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEditarProveedor"><i class="fas fa-edit pe-2"></i>Editar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEliminarProveedor"><i
+                                        class="fas fa-trash-alt pe-2"></i>Eliminar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#marcas" data-bs-toggle="collapse"
+                            aria-expanded="false"><i class="fa-solid fa-trademark pe-2"></i>
+                            Marcas
+                        </a>
+                        <ul id="marcas" class="sidebar-dropdown list-unstyled collapse ps-3" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalBuscarMarca"><i class="fas fa-search pe-2"></i>Buscar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalAgregarMarca"><i class="fas fa-plus pe-2"></i>Agregar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEditarMarca"><i class="fas fa-edit pe-2"></i>Editar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEliminarMarca"><i
+                                        class="fas fa-trash-alt pe-2"></i>Eliminar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#estados" data-bs-toggle="collapse"
+                            aria-expanded="false"><i class="fa-solid fa-flag pe-2"></i>
+                            Estados
+                        </a>
+                        <ul id="estados" class="sidebar-dropdown list-unstyled collapse ps-3" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalBuscarEstado"><i class="fas fa-search pe-2"></i>Buscar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalAgregarEstado"><i class="fas fa-plus pe-2"></i>Agregar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEditarEstado"><i class="fas fa-edit pe-2"></i>Editar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEliminarEstado"><i
+                                        class="fas fa-trash-alt pe-2"></i>Eliminar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#TipoMovimientoActivo"
+                            data-bs-toggle="collapse" aria-expanded="false"><i
+                                class="fa-solid fa-exchange-alt pe-2"></i>
+                            Tipo Movimiento Activo
+                        </a>
+                        <ul id="TipoMovimientoActivo" class="sidebar-dropdown list-unstyled collapse ps-3"
+                            data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalBuscarTipoMovimientoActivo"><i
+                                        class="fas fa-search pe-2"></i>Buscar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalAgregarTipoMovimientoActivo"><i
+                                        class="fas fa-plus pe-2"></i>Agregar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEditarTipoMovimientoActivo"><i
+                                        class="fas fa-edit pe-2"></i>Editar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link" data-bs-toggle="modal"
+                                    data-bs-target="#ModalEliminarTipoMovimientoActivo"><i
                                         class="fas fa-trash-alt pe-2"></i>Eliminar</a>
                             </li>
                         </ul>
@@ -196,6 +365,37 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </nav>
+            <main class="content p-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 d-flex">
+                            <div class="card flex-fill border-0">
+                                <div class="card-body py-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <h4>¡Bienvenido al Dashboard!</h4>
+                                            <p class="mb-0">¡Nos emociona tenerte aquí!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-center">
+                                <a href="https://github.com/MariaJosePintoAparicio" class="text-muted">
+                                    <strong>By Develop Maria Jose ❤️</strong>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
@@ -203,11 +403,1214 @@
     <script src="js/services/tipoActivos.js"></script>
     <script src="js/services/tipoPersona.js"></script>
     <script src="js/services/personas.js"></script>
+    <script src="js/services/categoriaActivo.js"></script>
+    <script src="js/services/proveedor.js"></script>
+    <script src="js/services/marcas.js"></script>
+    <script src="js/services/estado.js"></script>
+    <script src="js/services/tipoMovimientoActivo.js"></script>
+    <script src="js/services/telefonoPersona.js"></script>
+    <script src="js/services/historialActivo.js"></script>
+    <script src="js/services/activos.js"></script>
+    <script src="js/services/asignacion.js"></script>
+    <script src="js/services/detalleMovimiento.js"></script>
+
+
+    <!-- Modales de Asignacion -->
+    <!-- Modal Buscador Asignacion -->
+    <div class="modal fade" id="ModalCrearAsignacion" tabindex="-1" aria-labelledby="ModalCrearAsignacion"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Crear Asignacion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="AsignacionForm">
+                        <div class="mb-3">
+                            <label for="codigoCrearAsignacion" class="form-label">ID :</label>
+                            <input type="text" class="form-control" id="codigoCrearAsignacion" name="codigoCrearAsignacion" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fechaCrearAsignacion" class="form-label">Fecha :</label>
+                            <input type="date" class="form-control" id="fechaCrearAsignacion" name="fechaCrearAsignacion" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="responsableAsignacion" class="form-label">Persona :</label>
+                            <select class="form-select mb-3" id="responsableAsignacion">
+                                <option value="" selected>Loading...</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ModalAsignarActivo" tabindex="-1" aria-labelledby="ModalAsignarActivo"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Asignar Activos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID del responsable :</label>
+                        <input type="text" class="form-control" id="buscarAsignarActivo" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscarAsignarActivo()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultadoBuscarAsignarActivo" class="pt-4"></div>
+
+                    <!-- Formulario de asignacion de activo -->
+                    <div id="formularioAsignarActivo" class="py-4 d-none">
+                        <form id="detalleMovimiento">
+                            <input type="text" class="form-control d-none" id="idAsignarActivo" name="idAsignarActivo" required>
+                            <div class="mb-3">
+                                <label for="codigoAsignarActivo" class="form-label">ID :</label>
+                                <input type="text" class="form-control" id="codigoAsignarActivo" name="codigoAsignarActivo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fechaAsignarActivo" class="form-label">Fecha :</label>
+                                <input type="date" class="form-control" id="fechaAsignarActivo" name="fechaAsignarActivo" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="personaAsignarActivo" class="form-label">Persona :</label>
+                                <select class="form-select mb-3" id="personaAsignarActivo" disabled>
+                                    <option value="" selected>Loading...</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="selectAsignarActivo" class="form-label">Activo :</label>
+                                <select class="form-select mb-3" id="selectAsignarActivo">
+                                    <option value="" selected>Loading...</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="comentarioAsignarActivo" class="form-label">Comentario :</label>
+                                <textarea class="form-control" id="comentarioAsignarActivo" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
 
+    <!-- Modales de Activos -->
+    <!-- Modal Buscador Activos -->
+    <div class="modal fade" id="ModalBuscarActivos" tabindex="-1" aria-labelledby="ModalBuscarActivos"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Activos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarActivos" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscarActivos()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultadoBuscarActivos" class="py-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Agregar  Activos -->
+    <div class="modal fade" id="ModalAgregarActivos" tabindex="-1" aria-labelledby="ModalAgregarActivos"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar de Activos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="ActivosForm">
+                        <div class="mb-3">
+                            <label for="codigoActivos" class="form-label">ID :</label>
+                            <input type="text" class="form-control" id="codigoActivos" name="codigoActivos" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="codTransaccionActivos" class="form-label">Codigo de transaccion :</label>
+                            <input type="text" class="form-control" id="codTransaccionActivos" name="codTransaccionActivos" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numeroFormularioActivos" class="form-label">Numero de formulario :</label>
+                            <input type="text" class="form-control" id="numeroFormularioActivos" name="numeroFormularioActivos" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="marcaActivos" class="form-label">Marca :</label>
+                            <select class="form-select mb-3" id="marcaActivos">
+                                <option value="" selected>Loading...</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="selectCategoriaActivos" class="form-label">Categoria :</label>
+                            <select class="form-select mb-3" id="selectCategoriaActivos">
+                                <option value="" selected>Loading...</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipoActivos" class="form-label">Tipo :</label>
+                            <select class="form-select mb-3" id="tipoActivos">
+                                <option value="" selected>Loading...</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="valorUnitarioActivos" class="form-label">Valor Unitario :</label>
+                            <input type="text" class="form-control" id="valorUnitarioActivos" name="valorUnitarioActivos" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="proveedorActivos" class="form-label">Proveedor :</label>
+                            <select class="form-select mb-3" id="proveedorActivos">
+                                <option value="" selected>Loading...</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numeroSerialActivos" class="form-label">Numero Serial :</label>
+                            <input type="text" class="form-control" id="numeroSerialActivos" name="numeroSerialActivos" required>
+                        </div>
+                        <!-- <div class="mb-3">
+                            <label for="responsableActivos" class="form-label">Empresa Responsable :</label>
+                            <input type="text" class="form-control" id="responsableActivos" name="responsableActivos" required>
+                        </div> -->
+                        <div class="mb-3">
+                            <label for="responsableActivos" class="form-label">Empresa Responsable :</label>
+                            <select class="form-select mb-3" id="responsableActivos">
+                                <option value="" selected>Loading...</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="estadoActivo" class="form-label">Estado :</label>
+                            <select class="form-select mb-3" id="estadoActivo">
+                                <option value="" selected>Loading...</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar  Activos -->
+    <div class="modal fade" id="ModalEditarActivos" tabindex="-1" aria-labelledby="ModalEditarActivos"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Activos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarEditarActivos" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="editarActivos()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div>
+                        <h6 class="mt-4 mb-2">Editar de Activos</h6>
+                        <form>
+                            <input type="text" class="form-control d-none" id="idEditarActivos" name="id" required>
+                            <div class="mb-3">
+                                <label for="codigoEditarActivos" class="form-label">ID :</label>
+                                <input type="text" class="form-control" id="codigoEditarActivos" name="codigoEditarActivos" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="codTransaccionEditarActivos" class="form-label">Codigo de transaccion :</label>
+                                <input type="text" class="form-control" id="codTransaccionEditarActivos" name="codTransaccionEditarActivos" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="numeroFormularioEditarActivos" class="form-label">Numero de formulario :</label>
+                                <input type="text" class="form-control" id="numeroFormularioEditarActivos" name="numeroFormularioEditarActivos" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="marcaEditarActivos" class="form-label">Marca :</label>
+                                <select class="form-select mb-3" id="marcaEditarActivos">
+                                    <option value="" selected>Loading...</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="selectCategoriaEditarActivos" class="form-label">Categoria :</label>
+                                <select class="form-select mb-3" id="selectCategoriaEditarActivos">
+                                    <option value="" selected>Loading...</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tipoEditarActivos" class="form-label">Tipo :</label>
+                                <select class="form-select mb-3" id="tipoEditarActivos">
+                                    <option value="" selected>Loading...</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="valorUnitarioEditarActivos" class="form-label">Valor Unitario :</label>
+                                <input type="text" class="form-control" id="valorUnitarioEditarActivos" name="valorUnitarioEditarActivos" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="proveedorEditarActivos" class="form-label">Proveedor :</label>
+                                <select class="form-select mb-3" id="proveedorEditarActivos">
+                                    <option value="" selected>Loading...</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="numeroSerialEditarActivos" class="form-label">Numero Serial :</label>
+                                <input type="text" class="form-control" id="numeroSerialEditarActivos" name="numeroSerialEditarActivos" required>
+                            </div>
+                            <!-- <div class="mb-3">
+                                <label for="responsableEditarActivos" class="form-label">Empresa Responsable :</label>
+                                <input type="text" class="form-control" id="responsableEditarActivos" name="responsableEditarActivos" required>
+                            </div> -->
+                            <div class="mb-3">
+                                <label for="responsableEditarActivos" class="form-label">Empresa Responsable :</label>
+                                <select class="form-select mb-3" id="responsableEditarActivos">
+                                    <option value="" selected>Loading...</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="estadoActivo" class="form-label">Estado :</label>
+                                <select class="form-select mb-3" id="estadoActivo">
+                                    <option value="" selected>Loading...</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto d-flex"
+                                onclick="guardarEdicionActivos()">Editar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Eliminar  Activos -->
+    <div class="modal fade" id="ModalEliminarActivo" tabindex="-1" aria-labelledby="ModalEliminarActivo"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Activos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscadorEliminarActivos" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscadorEliminarActivos()">Buscar</button>
+
+                    <input type="text" class="form-control d-none" id="eliminarActivos" name="id" required>
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultado-busqueda-eliminar" class="py-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Modales de HistorialActivo -->
+    <!-- Modal Buscador HistorialActivo -->
+    <div class="modal fade" id="ModalBuscarHistorialActivo" tabindex="-1" aria-labelledby="ModalBuscarHistorialActivo"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Historial Activo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarHistorialActivo" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscarHistorialActivo()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultadoBuscarHistorialActivo" class="py-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Agregar  HistorialActivo -->
+    <div class="modal fade" id="ModalAgregarHistorialActivo" tabindex="-1" aria-labelledby="ModalAgregarHistorialActivo"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar de Historial Activo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="HistorialActivoForm">
+                        <div class="mb-3">
+                            <label for="codigoHistorialActivo" class="form-label">ID :</label>
+                            <input type="text" class="form-control" id="codigoHistorialActivo" name="codigoHistorialActivo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numeroHistorialActivo" class="form-label">Numero :</label>
+                            <input type="text" class="form-control" id="numeroHistorialActivo" name="numeroHistorialActivo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ubicacionHistorialActivo" class="form-label">Ubicacion :</label>
+                            <input type="text" class="form-control" id="ubicacionHistorialActivo" name="ubicacionHistorialActivo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="responsableHistorialActivo" class="form-label">Persona :</label>
+                            <select class="form-select mb-3" id="responsableHistorialActivo">
+                                <option value="" selected>Loading...</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="estadoeHistorialActivo" class="form-label">Persona :</label>
+                            <select class="form-select mb-3" id="estadoeHistorialActivo">
+                                <option value="" selected>Loading...</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar  HistorialActivo -->
+    <div class="modal fade" id="ModalEditarHistorialActivo" tabindex="-1" aria-labelledby="ModalEditarHistorialActivo"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Historial Activo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarEditarHistorialActivo" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="editarHistorialActivo()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div>
+                        <h6 class="mt-4 mb-2">Editar de Historial Activo</h6>
+                        <form>
+                            <input type="text" class="form-control d-none" id="idEditarHistorialActivo" name="id" required>
+
+                            <div class="mb-3">
+                                <label for="codigo" class="form-label">ID :</label>
+                                <input type="text" class="form-control" id="codigoEditarHistorialActivo" name="codigo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="numero" class="form-label">Numero :</label>
+                                <input type="text" class="form-control" id="numeroEditarHistorialActivo" name="numero" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="ubicacion" class="form-label">Ubicacion :</label>
+                                <input type="text" class="form-control" id="ubicacionEditarHistorialActivo" name="ubicacion" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="editarResponsableHistorialActivo" class="form-label">Persona :</label>
+                                <select class="form-select mb-3" id="editarResponsableHistorialActivo">
+                                    <option value="" selected>Loading...</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto d-flex"
+                                onclick="guardarEdicionHistorialActivo()">Editar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Eliminar  HistorialActivo -->
+    <div class="modal fade" id="ModalEliminarHistorialActivo" tabindex="-1" aria-labelledby="ModalEliminarHistorialActivo"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Historial Activo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscadorEliminarHistorialActivo" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscadorEliminarHistorialActivo()">Buscar</button>
+
+                    <input type="text" class="form-control d-none" id="eliminarHistorialActivo" name="id" required>
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultado-busqueda-eliminar" class="py-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+
+
+    <!-- Modales de TelefonoPersona -->
+    <!-- Modal Buscador TelefonoPersona -->
+    <div class="modal fade" id="ModalBuscarTelefonoPersona" tabindex="-1" aria-labelledby="ModalBuscarTelefonoPersona"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Telefono Persona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarTelefonoPersona" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscarTelefonoPersona()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultadoBuscarTelefonoPersona" class="py-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Agregar  TelefonoPersona -->
+    <div class="modal fade" id="ModalAgregarTelefonoPersona" tabindex="-1" aria-labelledby="ModalAgregarTelefonoPersona"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar de Telefono Persona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="TelefonoPersonaForm">
+                        <div class="mb-3">
+                            <label for="codigoTelefonoPersona" class="form-label">ID :</label>
+                            <input type="text" class="form-control" id="codigoTelefonoPersona" name="codigoTelefonoPersona" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numeroTelefonoPersona" class="form-label">Numero :</label>
+                            <input type="text" class="form-control" id="numeroTelefonoPersona" name="numeroTelefonoPersona" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ubicacionTelefonoPersona" class="form-label">Ubicacion :</label>
+                            <input type="text" class="form-control" id="ubicacionTelefonoPersona" name="ubicacionTelefonoPersona" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="responsableTelefonoPersona" class="form-label">Persona :</label>
+                            <select class="form-select mb-3" id="responsableTelefonoPersona">
+                                <option value="" selected>Loading...</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar  TelefonoPersona -->
+    <div class="modal fade" id="ModalEditarTelefonoPersona" tabindex="-1" aria-labelledby="ModalEditarTelefonoPersona"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Telefono Persona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarEditarTelefonoPersona" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="editarTelefonoPersona()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div>
+                        <h6 class="mt-4 mb-2">Editar de Telefono Persona</h6>
+                        <form>
+                            <input type="text" class="form-control d-none" id="idEditarTelefonoPersona" name="id" required>
+
+                            <div class="mb-3">
+                                <label for="codigo" class="form-label">ID :</label>
+                                <input type="text" class="form-control" id="codigoEditarTelefonoPersona" name="codigo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="numero" class="form-label">Numero :</label>
+                                <input type="text" class="form-control" id="numeroEditarTelefonoPersona" name="numero" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="ubicacion" class="form-label">Ubicacion :</label>
+                                <input type="text" class="form-control" id="ubicacionEditarTelefonoPersona" name="ubicacion" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="editarResponsableTelefonoPersona" class="form-label">Persona :</label>
+                                <select class="form-select mb-3" id="editarResponsableTelefonoPersona">
+                                    <option value="" selected>Loading...</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto d-flex"
+                                onclick="guardarEdicionTelefonoPersona()">Editar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Eliminar  TelefonoPersona -->
+    <div class="modal fade" id="ModalEliminarTelefonoPersona" tabindex="-1" aria-labelledby="ModalEliminarTelefonoPersona"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Telefono Persona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscadorEliminarTelefonoPersona" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscadorEliminarTelefonoPersona()">Buscar</button>
+
+                    <input type="text" class="form-control d-none" id="eliminarTelefonoPersona" name="id" required>
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultado-busqueda-eliminar" class="py-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+
+
+    <!-- Modales de TipoMovimientoActivo -->
+    <!-- Modal Buscador TipoMovimientoActivo -->
+    <div class="modal fade" id="ModalBuscarTipoMovimientoActivo" tabindex="-1"
+        aria-labelledby="ModalBuscarTipoMovimientoActivo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Tipo Movimiento Activo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarTipoMovimientoActivo" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscarTipoMovimientoActivo()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultadoBuscarTipoMovimientoActivo" class="py-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Agregar TipoMovimientoActivo -->
+    <div class="modal fade" id="ModalAgregarTipoMovimientoActivo" tabindex="-1"
+        aria-labelledby="ModalAgregarTipoMovimientoActivo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar de Tipo Movimiento Activo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="TipoMovimientoActivoForm">
+                        <div class="mb-3">
+                            <label for="codigoTipoMovimientoActivo" class="form-label">ID :</label>
+                            <input type="text" class="form-control" id="codigoTipoMovimientoActivo"
+                                name="codigoTipoMovimientoActivo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombreTipoMovimientoActivo" class="form-label">Nombre :</label>
+                            <input type="text" class="form-control" id="nombreTipoMovimientoActivo"
+                                name="nombreTipoMovimientoActivo" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar TipoMovimientoActivo -->
+    <div class="modal fade" id="ModalEditarTipoMovimientoActivo" tabindex="-1"
+        aria-labelledby="ModalEditarTipoMovimientoActivo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Tipo Movimiento Activo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarEditarTipoMovimientoActivo" name="buscar"
+                            required>
+                    </div>
+                    <button class="btn btn-primary" onclick="editarTipoMovimientoActivo()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div>
+                        <h6 class="mt-4 mb-2">Editar de Tipo Movimiento Activo</h6>
+                        <form>
+                            <input type="text" class="form-control d-none" id="idEditarTipoMovimientoActivo" name="id"
+                                required>
+
+                            <div class="mb-3">
+                                <label for="codigo" class="form-label">ID :</label>
+                                <input type="text" class="form-control" id="codigoEditarTipoMovimientoActivo"
+                                    name="codigo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre :</label>
+                                <input type="text" class="form-control" id="nombreEditarTipoMovimientoActivo"
+                                    name="nombre" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto d-flex"
+                                onclick="guardarEdicionTipoMovimientoActivo()">Editar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Eliminar TipoMovimientoActivo -->
+    <div class="modal fade" id="ModalEliminarTipoMovimientoActivo" tabindex="-1"
+        aria-labelledby="ModalEliminarTipoMovimientoActivo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Tipo Movimiento Activo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscadorEliminarTipoMovimientoActivo" name="buscar"
+                            required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscadorEliminarTipoMovimientoActivo()">Buscar</button>
+
+                    <input type="text" class="form-control d-none" id="eliminarTipoMovimientoActivo" name="id" required>
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultado-busqueda-eliminar" class="py-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modales de Estado -->
+    <!-- Modal Buscador Estado -->
+    <div class="modal fade" id="ModalBuscarEstado" tabindex="-1" aria-labelledby="ModalBuscarEstado" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Estado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarEstado" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscarEstado()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultadoBuscarEstado" class="py-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Agregar Estado -->
+    <div class="modal fade" id="ModalAgregarEstado" tabindex="-1" aria-labelledby="ModalAgregarEstado"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar de Estado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="EstadoForm">
+                        <div class="mb-3">
+                            <label for="codigoEstado" class="form-label">ID :</label>
+                            <input type="text" class="form-control" id="codigoEstado" name="codigoEstado" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombreEstado" class="form-label">Nombre :</label>
+                            <input type="text" class="form-control" id="nombreEstado" name="nombreEstado" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar Estado -->
+    <div class="modal fade" id="ModalEditarEstado" tabindex="-1" aria-labelledby="ModalEditarEstado" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Estado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarEditarEstado" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="editarEstado()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div>
+                        <h6 class="mt-4 mb-2">Editar de Estado</h6>
+                        <form>
+                            <input type="text" class="form-control d-none" id="idEditarEstado" name="id" required>
+
+                            <div class="mb-3">
+                                <label for="codigo" class="form-label">ID :</label>
+                                <input type="text" class="form-control" id="codigoEditarEstado" name="codigo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre :</label>
+                                <input type="text" class="form-control" id="nombreEditarEstado" name="nombre" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto d-flex"
+                                onclick="guardarEdicionEstado()">Editar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Eliminar Estado -->
+    <div class="modal fade" id="ModalEliminarEstado" tabindex="-1" aria-labelledby="ModalEliminarEstado"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Estado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscadorEliminarEstado" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscadorEliminarEstado()">Buscar</button>
+
+                    <input type="text" class="form-control d-none" id="eliminarEstado" name="id" required>
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultado-busqueda-eliminar" class="py-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modales de Marca -->
+    <!-- Modal Buscador Marca -->
+    <div class="modal fade" id="ModalBuscarMarca" tabindex="-1" aria-labelledby="ModalBuscarMarca" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Marca</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarMarca" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscarMarca()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultadoBuscarMarca" class="py-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Agregar Marca -->
+    <div class="modal fade" id="ModalAgregarMarca" tabindex="-1" aria-labelledby="ModalAgregarMarca" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar de Marca</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="MarcaForm">
+                        <div class="mb-3">
+                            <label for="codigoMarca" class="form-label">ID :</label>
+                            <input type="text" class="form-control" id="codigoMarca" name="codigoMarca" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombreMarca" class="form-label">Nombre :</label>
+                            <input type="text" class="form-control" id="nombreMarca" name="nombreMarca" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar Marca -->
+    <div class="modal fade" id="ModalEditarMarca" tabindex="-1" aria-labelledby="ModalEditarMarca" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Marca</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarEditarMarca" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="editarMarca()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div>
+                        <h6 class="mt-4 mb-2">Editar de Marca</h6>
+                        <form>
+                            <input type="text" class="form-control d-none" id="idEditarMarca" name="id" required>
+
+                            <div class="mb-3">
+                                <label for="codigo" class="form-label">ID :</label>
+                                <input type="text" class="form-control" id="codigoEditarMarca" name="codigo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre :</label>
+                                <input type="text" class="form-control" id="nombreEditarMarca" name="nombre" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto d-flex"
+                                onclick="guardarEdicionMarca()">Editar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Eliminar Marca -->
+    <div class="modal fade" id="ModalEliminarMarca" tabindex="-1" aria-labelledby="ModalEliminarMarca"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Marca</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscadorEliminarMarca" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscadorEliminarMarca()">Buscar</button>
+
+                    <input type="text" class="form-control d-none" id="eliminarMarca" name="id" required>
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultado-busqueda-eliminar" class="py-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modales de  Proveedor -->
+    <!-- Modal Buscador  Proveedor -->
+    <div class="modal fade" id="ModalBuscarProveedor" tabindex="-1" aria-labelledby="ModalBuscarProveedor"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Proveedor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarProveedor" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscarProveedor()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultadoBuscarProveedor" class="py-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Agregar  Proveedor -->
+    <div class="modal fade" id="ModalAgregarProveedor" tabindex="-1" aria-labelledby="ModalAgregarProveedor"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar de Proveedor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="ProveedorForm">
+                        <div class="mb-3">
+                            <label for="codigoProveedor" class="form-label">ID :</label>
+                            <input type="text" class="form-control" id="codigoProveedor" name="codigoProveedor"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombreProveedor" class="form-label">Nombre :</label>
+                            <input type="text" class="form-control" id="nombreProveedor" name="nombreProveedor"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email :</label>
+                            <input type="email" class="form-control" id="emailProveedor" name="email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar  Proveedor -->
+    <div class="modal fade" id="ModalEditarProveedor" tabindex="-1" aria-labelledby="ModalEditarProveedor"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Proveedor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarEditarProveedor" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="editarProveedor()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div>
+                        <h6 class="mt-4 mb-2">Editar de Proveedor</h6>
+                        <form>
+                            <input type="text" class="form-control d-none" id="idEditarProveedor" name="id" required>
+
+                            <div class="mb-3">
+                                <label for="codigo" class="form-label">ID :</label>
+                                <input type="text" class="form-control" id="codigoEditarProveedor" name="codigo"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre :</label>
+                                <input type="text" class="form-control" id="nombreEditarProveedor" name="nombre"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email :</label>
+                                <input type="email" class="form-control" id="emailEditarProveedor" name="email"
+                                    required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto d-flex"
+                                onclick="guardarEdicionProveedor()">Editar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Eliminar  Proveedor -->
+    <div class="modal fade" id="ModalEliminarProveedor" tabindex="-1" aria-labelledby="ModalEliminarProveedor"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Proveedor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscadorEliminarProveedor" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscadorEliminarProveedor()">Buscar</button>
+
+                    <input type="text" class="form-control d-none" id="eliminarIdProveedor" name="id" required>
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultado-busqueda-eliminar" class="py-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modales de categoria Activos -->
+    <!-- Modal Buscador categoria Activos -->
+    <div class="modal fade" id="ModalBuscarCategoriaActivos" tabindex="-1" aria-labelledby="ModalBuscarCategoriaActivos"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Categoria Activos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarCategoriaActivos" name="buscar" required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscarCategoriaActivos()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultadoBuscarCategoriaActivos" class="py-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Agregar Categoria Activos -->
+    <div class="modal fade" id="ModalAgregarCategoriaActivos" tabindex="-1"
+        aria-labelledby="ModalAgregarCategoriaActivos" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar de Categoria Activos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="categoriaActivosForm">
+                        <div class="mb-3">
+                            <label for="codigoCategoriaActivos" class="form-label">ID :</label>
+                            <input type="text" class="form-control" id="codigoCategoriaActivos"
+                                name="codigoCategoriaActivos" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombreCategoriaActivos" class="form-label">Nombre :</label>
+                            <input type="text" class="form-control" id="nombreCategoriaActivos"
+                                name="nombreCategoriaActivos" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar Categoria Activos -->
+    <div class="modal fade" id="ModalEditarCategoriaActivos" tabindex="-1" aria-labelledby="ModalEditarCategoriaActivos"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de Categoria Activos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscarEditarCategoriaActivos" name="buscar"
+                            required>
+                    </div>
+                    <button class="btn btn-primary" onclick="editarCategoriaActivos()">Buscar</button>
+
+                    <!-- Resultado de la búsqueda -->
+                    <div>
+                        <h6 class="mt-4 mb-2">Editar de Categoria Activos</h6>
+                        <form>
+                            <input type="text" class="form-control d-none" id="idEditarCategoriaActivos" name="id"
+                                required>
+
+                            <div class="mb-3">
+                                <label for="codigo" class="form-label">ID :</label>
+                                <input type="text" class="form-control" id="codigoEditarCategoriaActivos" name="codigo"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre :</label>
+                                <input type="text" class="form-control" id="nombreEditarCategoriaActivos" name="nombre"
+                                    required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto d-flex"
+                                onclick="guardarEdicionCategoriaActivos()">Editar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Eliminar Categoria Activos -->
+    <div class="modal fade" id="ModalEliminarCategoriaActivos" tabindex="-1"
+        aria-labelledby="ModalEliminarCategoriaActivos" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buscar de CategoriaActivos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Buscar por ID :</label>
+                        <input type="text" class="form-control" id="buscadorEliminarCategoriaActivos" name="buscar"
+                            required>
+                    </div>
+                    <button class="btn btn-primary" onclick="buscadorEliminarCategoriaActivos()">Buscar</button>
+
+                    <input type="text" class="form-control d-none" id="eliminarCategoriaActivos" name="id" required>
+                    <!-- Resultado de la búsqueda -->
+                    <div id="resultado-busqueda-eliminar" class="py-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -219,7 +1622,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Buscar  de Persona</h5>
+                    <h5 class="modal-title">Buscar de Persona</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -257,8 +1660,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email :</label>
-                            <input type="email" class="form-control" id="emailPersona" name="email"
-                                required>
+                            <input type="email" class="form-control" id="emailPersona" name="email" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Tipo Persona :</label>
@@ -297,18 +1699,15 @@
 
                             <div class="mb-3">
                                 <label for="codigo" class="form-label">ID :</label>
-                                <input type="text" class="form-control" id="codigoEditarPersona" name="codigo"
-                                    required>
+                                <input type="text" class="form-control" id="codigoEditarPersona" name="codigo" required>
                             </div>
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">Nombre :</label>
-                                <input type="text" class="form-control" id="nombreEditarPersona" name="nombre"
-                                    required>
+                                <input type="text" class="form-control" id="nombreEditarPersona" name="nombre" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email :</label>
-                                <input type="email" class="form-control" id="emailEditarPersona" name="email"
-                                    required>
+                                <input type="email" class="form-control" id="emailEditarPersona" name="email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Tipo Persona :</label>
@@ -389,12 +1788,14 @@
                 <div class="modal-body">
                     <form id="tipoPersonaForm">
                         <div class="mb-3">
-                            <label for="codigoPersona" class="form-label">ID :</label>
-                            <input type="text" class="form-control" id="codigoPersona" name="codigoPersona" required>
+                            <label for="codigoTipoPersona" class="form-label">ID :</label>
+                            <input type="text" class="form-control" id="codigoTipoPersona" name="codigoTipoPersona"
+                                required>
                         </div>
                         <div class="mb-3">
-                            <label for="nombrePersona" class="form-label">Nombre :</label>
-                            <input type="text" class="form-control" id="nombrePersona" name="nombrePersona" required>
+                            <label for="nombreTipoPersona" class="form-label">Nombre :</label>
+                            <input type="text" class="form-control" id="nombreTipoPersona" name="nombreTipoPersona"
+                                required>
                         </div>
                         <button type="submit" class="btn btn-primary">Agregar</button>
                     </form>

@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault(); // Detener el envío del formulario
 
         // Obtener valores del formulario
-        const codigo = document.getElementById('codigoPersona').value.trim();
-        const nombre = document.getElementById('nombrePersona').value.trim();
+        const codigo = document.getElementById('codigoTipoPersona').value.trim();
+        const nombre = document.getElementById('nombreTipoPersona').value.trim();
 
         // Verificar si todos los campos están llenos
-        if (codigo && nombrel) {
+        if (codigo && nombre) {
             const tipoPersona = {
                 codigo: codigo,
                 nombre: nombre

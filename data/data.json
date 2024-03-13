@@ -1,29 +1,239 @@
 {
   "tipoActivo": [
     {
-      "codigo": "1234",
-      "nombre": "Tipo Activo Prueba 1",
-      "email": "garciamendozamarlonfabian@gmail.com",
-      "id": "a19c"
+      "id": "fdc0",
+      "codigo": "001",
+      "nombre": "Monitor",
+      "email": "prueba@prueba.com"
     },
     {
-      "id": "6b32",
-      "codigo": "000",
-      "nombre": "Tipo Activo Prueba 2",
-      "email": "garciamendozamarlonfabian@gmail.com"
+      "id": "6378",
+      "codigo": "002",
+      "nombre": "CPU",
+      "email": "prueba@prueba.com"
+    },
+    {
+      "id": "f217",
+      "codigo": "003",
+      "nombre": "Teclado",
+      "email": "prueba@prueba.com"
+    },
+    {
+      "id": "28df",
+      "codigo": "004",
+      "nombre": "Mouse",
+      "email": "prueba@prueba.com"
+    },
+    {
+      "id": "2a9b",
+      "codigo": "005",
+      "nombre": "Aire Acondicionado",
+      "email": "prueba@prueba.com"
+    },
+    {
+      "id": "51f3",
+      "codigo": "006",
+      "nombre": "Portatil",
+      "email": "prueba@prueba.com"
+    },
+    {
+      "id": "fd89",
+      "codigo": "007",
+      "nombre": "Impresora",
+      "email": "prueba@prueba.com"
     }
   ],
   "tipoPersona": [
     {
-      "id": "1376",
-      "codigo": "002",
-      "nombre": "Juridica"
+      "id": "5b25",
+      "codigo": "001",
+      "nombre": "Natural"
     },
     {
-      "codigo": "001",
-      "nombre": "Natural",
-      "id": "5658"
+      "id": "fc93",
+      "codigo": "002",
+      "nombre": "Juridica"
     }
   ],
-  "personas": []
+  "personas": [
+    {
+      "codigo": "001",
+      "nombre": "hola",
+      "email": "hola@gmail.com",
+      "idTipoPersona": "5b25",
+      "tipoPersona": "Natural",
+      "id": "698e"
+    },
+    {
+      "id": "704f",
+      "codigo": "002",
+      "nombre": "Maria Jose",
+      "email": "prueba@prueba.com",
+      "idTipoPersona": "5b25",
+      "tipoPersona": "Natural"
+    }
+  ],
+  "categoriaActivo": [
+    {
+      "id": "6f41",
+      "codigo": "001",
+      "nombre": "Equipo de computo"
+    },
+    {
+      "id": "2b54",
+      "codigo": "002",
+      "nombre": "Electrodomestico"
+    },
+    {
+      "id": "e669",
+      "codigo": "003",
+      "nombre": "Juego"
+    }
+  ],
+  "proveedor": [
+    {
+      "id": "1172",
+      "codigo": "001",
+      "nombre": "Proveedor SAS",
+      "email": "prueba@prueba.com"
+    },
+    {
+      "id": "fde5",
+      "codigo": "002",
+      "nombre": "Priveedor Tapitas",
+      "email": "prueba@prueba.com"
+    }
+  ],
+  "marcas": [
+    {
+      "id": "f175",
+      "codigo": "001",
+      "nombre": "LG"
+    },
+    {
+      "id": "f5f5",
+      "codigo": "002",
+      "nombre": "COMPUMAX"
+    },
+    {
+      "id": "b09f",
+      "codigo": "003",
+      "nombre": "LOGITECH"
+    },
+    {
+      "id": "ef36",
+      "codigo": "004",
+      "nombre": "BENQ"
+    },
+    {
+      "id": "6016",
+      "codigo": "005",
+      "nombre": "ASUS"
+    },
+    {
+      "id": "c22c",
+      "codigo": "006",
+      "nombre": "LENOVO"
+    },
+    {
+      "id": "d1d3",
+      "codigo": "007",
+      "nombre": "HP"
+    }
+  ],
+  "estados": [
+    {
+      "id": "847f",
+      "codigo": "0",
+      "nombre": "No asignado"
+    },
+    {
+      "id": "f78c",
+      "codigo": "1",
+      "nombre": "Asignado"
+    },
+    {
+      "id": "e0bd",
+      "codigo": "2",
+      "nombre": "Dado de baja por daño"
+    },
+    {
+      "id": "300d",
+      "codigo": "3",
+      "nombre": "En  reparación y/oGarantia"
+    }
+  ],
+  "tipoMovimientoActivos": [],
+  "telefonoPersona": [
+    {
+      "codigo": "001",
+      "numero": "3153005184",
+      "ubicacion": "Floridablanca",
+      "idPersona": "698e",
+      "persona": "hola",
+      "id": "ce92"
+    }
+  ],
+  "historialActivo": [],
+  "activos": [
+    {
+      "id": "88cd",
+      "codigo": "000",
+      "codigoTransaccion": "000",
+      "numeroFormulario": "000",
+      "idMarca": "f175",
+      "marca": "LG",
+      "idCategoria": "6f41",
+      "categoria": "Equipo de computo",
+      "idTipo": "fdc0",
+      "tipo": "Monitor",
+      "valorUnitarioActivos": "1000000",
+      "idPreveedor": "1172",
+      "preveedor": "Proveedor SAS",
+      "numeroSerialActivos": "101010",
+      "idResponsable": "33a3",
+      "responsable": "CampusLands",
+      "idEstado": "847f",
+      "estado": "No asignado"
+    },
+    {
+      "id": "6188",
+      "codigo": "001",
+      "codigoTransaccion": "001",
+      "numeroFormulario": "001",
+      "idMarca": "6016",
+      "marca": "ASUS",
+      "idCategoria": "e669",
+      "categoria": "Juego",
+      "idTipo": "2a9b",
+      "tipo": "Aire Acondicionado",
+      "valorUnitarioActivos": "10000",
+      "idPreveedor": "fde5",
+      "preveedor": "Priveedor Tapitas",
+      "numeroSerialActivos": "100001",
+      "idResponsable": "33a3",
+      "responsable": "CampusLands",
+      "idEstado": "847f",
+      "estado": "No asignado"
+    }
+  ],
+  "empresas": [
+    {
+      "id": "33a3",
+      "codigo": "12345",
+      "nombre": "CampusLands",
+      "email": "campuslands@campuslands.com"
+    }
+  ],
+  "asignacion": [
+    {
+      "id": "b963",
+      "codigo": "000",
+      "fecha": "2024-03-05",
+      "idPersona": "698e",
+      "persona": "hola"
+    }
+  ],
+  "detalleMovimiento": [
+  ]
 }

@@ -105,8 +105,8 @@ async function editarPersona() {
                 document.getElementById('codigoEditarPersona').value = PersonaEncontrado.codigo;
                 document.getElementById('nombreEditarPersona').value = PersonaEncontrado.nombre;
                 document.getElementById('emailEditarPersona').value = PersonaEncontrado.email;
-                const valorDeseado = parseInt(PersonaEncontrado.idTipoPersona);
-                document.getElementById('tipoPersonaEditarPersona').value = valorDeseado.toString();
+                const valor = PersonaEncontrado.idTipoPersona;
+                document.getElementById('tipoPersonaEditarPersona').value = valor.toString();
             } else {
                 // Limpiar el formulario si no se encontraron resultados
                 document.getElementById('idEditarPersona').value = '';
